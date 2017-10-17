@@ -16,11 +16,25 @@ public class Animal {
     public String sleep(){
         return "An animal sleeps...";
     }
+
+    //getter
     public String getName(){
         return name;
     }
+    //setter
     public void setName(String value){
         name= value;
     }
 
+
+
+    public String displayWhatAnAnimalDoes(){
+        String output;
+        output=this.eat()+" "+this.sleep();
+        return output;
+
+    }
+    public String speak(){
+        return "An animal makes noise ";
+    }
 }
